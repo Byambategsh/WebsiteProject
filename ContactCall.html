@@ -1,47 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Talkhchikher.png" width=10% height= auto>
-				<a href="index.html"></a>
-			</img>
-			<nav>
-				<ul>
-					<li><a href="products.html"> Бүтээгдэхүүн </a></li>
-					<li><a href="aboutUs.html"> ТаЧи ХХК </a></li>
-					<li><a href="location.html"> Байрлал </a></li>
-					<li><a href="advice.html"> Зөвөлгөө </a></li>
-					<li><a href="shopping.html"> Захиалга </a></li>
-				</ul>
-			</nav>
-            <nav>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-envelope-o"></a>
-                <a href="#" class="fa fa-phone"></a>
-                <i class="fa fa-search">
-					<a href="#" ></a>
-				</i>
-			</nav>
-    </header>
-    <main>
-        <article>
-            <img src="" alt="">
-            <h5> Борлуулалтын алба: </h5>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h5> Маркетингийн алба: </h5>
-        </article>
-    </main>
-    <footer>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+		<title>Талх Чихэр ХХК</title>
 
-    </footer>
-</body>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="CSS/css/uikit-rtl.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<!--
+        <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH."header_menu.html") ?>
+            -->
+        <script src="CSS/js/uikit.min.js"></script>
+        <script src="CSS/js/uikit-icons.min.js"></script>
+        <script>
+            window.onscroll = function() {
+                scrollFunction()
+            };
+            function scrollFunction() {
+                if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                    document.getElementsTagName("header").style.top = "0";
+                } else {
+                    document.getElementsByTagName("header").style.top = "-100%";
+                }
+            }
+        </script>
+        <header style="background-color: #f8f8ff;">
+            <nav>
+                <input type="checkbox" id="menuBar" class="hidden">
+                <label for="menuBar" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <a href="index.html"><img id="logo", src="Images/TaChi.svg"></a>
+                <ul class="menu">
+                    <li><a href="products.html"> Бүтээгдэхүүн </a></li>
+                    <li><a href="aboutUs.html"> ТаЧи ХХК </a></li>
+                    <li><a href="location.html"> Байрлал </a></li>
+                    <li><a href="advice.html"> Зөвөлгөө </a></li>
+                    <li><a href="shopping.html"> Захиалга </a></li>
+                </ul>
+                    <ul class="contact">
+                        <li><a href="#" class="fa fa-search"></a></li>
+                        <li><a href="https://www.facebook.com/TalkhChikher/" class="fa fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/Talkh_Chikher" class="fa fa-twitter"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCuERpwJRWGhiBKeOTmqzPXg" class="fa fa-youtube-play"></a></li>
+                        <li><a href="email.html" class="fa fa-envelope-o"></a></li>
+                        <li><a href="ContactCall.html" class="fa fa-phone"></a></li>
+                    </ul>	
+            </nav>
+        </header>
+		<main>
+			<section class="container"> 
+				<div class="uk-child-width-1-2"  uk-grid >
+					<img src= "https://upload.wikimedia.org/wikipedia/commons/7/73/Talkhchikher.png" alt="Талх чихэр лого">
+                    <div class="uk-flex uk-flex-middle">
+                        <div>
+                            <h1>Борлуулалтын алба</h1>
+                            <h3>Утас: </h3>
+                        </div>
+                    </div>	
+				</div>
+
+				<div class="uk-child-width-1-2"  uk-grid >
+					<img src= "https://upload.wikimedia.org/wikipedia/commons/7/73/Talkhchikher.png" alt="Талх чихэр лого">
+                    <div class="uk-flex uk-flex-middle">
+                        <div>
+                            <h1> Маркетингийн алба </h1>
+                            <h3> Утас: </h3>
+                        </div>
+                    </div>	
+				</div>
+				</section>	
+		</main>
+		<footer>
+			<center>
+			<div class="logoContainer">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/certificate_2.png" alt="ISO/IEC Certificate">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/chanar_iso_2.png" alt="ISO 9001">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/logo3.png" alt="ISO 22000">
+			</div>
+			<p> © Copyright 2021, Byambategsh.D </p>
+			</center>
+		</footer>
+	</body>
 </html>

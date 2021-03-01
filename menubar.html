@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+		<title>menu</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="CSS/css/uikit-rtl.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+
+		<style>
+
+		</style>
+	</head>
+<body>
+    <script src="CSS/js/uikit.min.js"></script>
+    <script src="CSS/js/uikit-icons.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.getElementsTagName("header").style.top = "0";
+            } else {
+                document.getElementsByTagName("header").style.top = "-100%";
+            }
+        }
+    </script>
+    <header style="background-color: #f8f8ff; opacity: 0.3;">
+        <nav>
+            <input type="checkbox" id="menuBar" class="hidden">
+            <label for="menuBar" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <a href="index.html"><img id="logo", src="Images/TaChi.svg"></a>
+            <ul class="menu">
+                <li><a href="products.html"> Бүтээгдэхүүн </a></li>
+                <li><a href="aboutUs.html"> ТаЧи ХХК </a></li>
+                <li><a href="location.html"> Байрлал </a></li>
+                <li><a href="advice.html"> Зөвөлгөө </a></li>
+                <li><a href="shopping.html"> Захиалга </a></li>
+            </ul>
+                <ul class="contact">
+                    <li><a href="#" class="fa fa-search"></a></li>
+                    <li><a href="https://www.facebook.com/TalkhChikher/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/Talkh_Chikher" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCuERpwJRWGhiBKeOTmqzPXg" class="fa fa-youtube-play"></a></li>
+                    <li><a href="email.html" class="fa fa-envelope-o"></a></li>
+                    <li><a href="ContactCall.html" class="fa fa-phone"></a></li>
+                </ul>	
+        </nav>
+    </header>
+</body>
+</html>

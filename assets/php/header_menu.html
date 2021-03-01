@@ -1,0 +1,40 @@
+<script src="CSS/js/uikit.min.js"></script>
+    <script src="CSS/js/uikit-icons.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+                document.getElementsTagName("header").style.top = "0";
+            } else {
+                document.getElementsByTagName("header").style.top = "-100%";
+            }
+        }
+    </script>
+    <header style="background-color: #f8f8ff; opacity: 0.3;">
+        <nav>
+            <input type="checkbox" id="menuBar" class="hidden">
+            <label for="menuBar" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <a href="index.html"><img id="logo", src="Images/TaChi.svg"></a>
+            <ul class="menu">
+                <li><a href="products.html"> Бүтээгдэхүүн </a></li>
+                <li><a href="aboutUs.html"> ТаЧи ХХК </a></li>
+                <li><a href="location.html"> Байрлал </a></li>
+                <li><a href="advice.html"> Зөвөлгөө </a></li>
+                <li><a href="shopping.html"> Захиалга </a></li>
+            </ul>
+                <ul class="contact">
+                    <li><a href="#" class="fa fa-search"></a></li>
+                    <li><a href="https://www.facebook.com/TalkhChikher/" class="fa fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/Talkh_Chikher" class="fa fa-twitter"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCuERpwJRWGhiBKeOTmqzPXg" class="fa fa-youtube-play"></a></li>
+                    <li><a href="email.html" class="fa fa-envelope-o"></a></li>
+                    <li><a href="ContactCall.html" class="fa fa-phone"></a></li>
+                </ul>	
+        </nav>
+    </header>

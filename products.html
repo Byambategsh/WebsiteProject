@@ -3,81 +3,124 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale= 1.0">
-		<title>TaChi products</title>
+		<title>Талх Чихэр ХХК</title>
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lobster&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="CSS/css/uikit-rtl.min.css"/>
+		<link rel="stylesheet" href="style.css"/>
+
+		<style>
+
+		</style>
 	</head>
+
 	<body>
+		<script src="CSS/js/uikit.min.js"></script>
+		<script src="CSS/js/uikit-icons.min.js"></script>
+		<script>
+			window.onscroll = function() {
+				scrollFunction()
+			};
+			function scrollFunction() {
+				if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+					document.getElementsTagName("header").style.top = "0";
+				} else {
+					document.getElementsByTagName("header").style.top = "-100%";
+				}
+			}
+		</script>
 		<header>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Talkhchikher.png" width=10% height= auto>
-				<a href="index.html"></a>
-			</img>
 			<nav>
-				<ul>
+				<input type="checkbox" id="menuBar" class="hidden">
+				<label for="menuBar" class="nav-btn">
+					<i></i>
+					<i></i>
+					<i></i>
+				</label>
+				<a href="index.html"><img id="logo", src="Images/TaChi.svg"></a>
+				<ul class="menu">
 					<li><a href="products.html"> Бүтээгдэхүүн </a></li>
 					<li><a href="aboutUs.html"> ТаЧи ХХК </a></li>
 					<li><a href="location.html"> Байрлал </a></li>
 					<li><a href="advice.html"> Зөвөлгөө </a></li>
 					<li><a href="shopping.html"> Захиалга </a></li>
 				</ul>
-			</nav>
-            <nav>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-envelope-o"></a>
-                <a href="#" class="fa fa-phone"></a>
-                <i class="fa fa-search">
-					<a href="#" ></a>
-				</i>
+					<ul class="contact">
+						<li><a href="#" class="fa fa-search"></a></li>
+						<li><a href="https://www.facebook.com/TalkhChikher/" class="fa fa-facebook"></a></li>
+						<li><a href="https://twitter.com/Talkh_Chikher" class="fa fa-twitter"></a></li>
+						<li><a href="https://www.youtube.com/channel/UCuERpwJRWGhiBKeOTmqzPXg" class="fa fa-youtube-play"></a></li>
+						<li><a href="email.html" class="fa fa-envelope-o"></a></li>
+						<li><a href="ContactCall.html" class="fa fa-phone"></a></li>
+					</ul>	
 			</nav>
 		</header>
-
 		<main>
-            <div class="fa fa-facebook">
-				<a href="#" ></a>
-			</div>
-			<section>
-                <article>
-					<img src="http://talkh-chikher.mn/media/talkhchikher/content/.-8164823571274025503_400_x_600.jpg" alt="Талх" width="200px", height="100%"></img>
-                    <h3> Талх </h3>
-                </article>		
-				<article>
-					<img src="http://talkh-chikher.mn/media/talkhchikher/content/.-8859202732436603013_400_x_600.jpg" width="100%", height="auto"></img>
-                    <h3> Нарийн боов </h3>
-				</article>
-				<article>
-					<img src="" width="200px", height="100%"></img>
-                    <h3> Бялуу </h3>
-				</article>
-				<article>
-					<img src="" width="200px", height="100%"></img>
-                    <h3> Жигнэмэг </h3>
-				</article>
-				<article>
-					<img src="" width="200px", height="100%"></img>
-                    <h3> Амттан </h3>
-				</article>
-				<article>
-					<img src="" width="200px", height="100%"></img>
-                    <h3> Хэвийн боов </h3>
-				</article>
-				<article>
-					<img src="" width="200px", height="100%"></img>
-                    <h3> Bakery </h3>
-                </article>	
-			</section>
-			<div>
-                <img src="" alt="">
-            </div>
+			<section class="productType"> 
+				<div class="productList">
+						<img src= "https://lh3.googleusercontent.com/proxy/W3C9OWKgqowWvxhwtRg_YtMHPAMp-kcY5tife9xylXmJ7m2RVpcMcirzcwESeWqN8FIFLSfPbVCnJuGh5RhTnSxOD6Ql1M9cIKZnAwpRHRQJ9ltLWquRh_UFEQQHmYQ4_quuvHbRwxYDDBMGgIoqZ4VWiu89J96jHh9r0WqL92iKpYKYYQ" alt="Талх">
+						<div>
+							<h3> Талх </h3>
+						</div>
+					</div>
+					<div class="productList">
+						<img src= "http://www.newsmall.mn/media/thumbs/mggg_large.jpg" alt="Нарийн боов"> 
+						<div>
+							<h3> Нарийн боов </h3>
+						</div>
+					</div>
+					<div class="productList">
+						<img src= "https://lh3.googleusercontent.com/proxy/hgg_HNguIs9wLNyEgsn7ZAva3sdQgiUVGhGEP3vlLbzLSx33RxgvISqQzZaFl0dEtrKg176zDadDHRaUjwCR0iajCU5kC__DnXj1ZyePRPqvIQHaloogqB6joLelIuGWHyy_1ZrTH0j541F5zb0" alt="Бялуу">
+						<div>
+							<h3> Бялуу </h3>
+						</div>
+					</div>
+					<div class="productList">
+						<img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKZeBra7IdISHgD1E2WorzMGyJyLJ8WgZ3g&usqp=CAU" alt="Ул боов">
+						<div>
+							<h3> Хэвийн боов </h3>
+						</div>
+					</div>
+				
+					<div class="productList">
+						<img src= "https://scontent.fuln1-1.fna.fbcdn.net/v/t1.0-9/145021408_3720245051358766_3453171990591217963_o.jpg?_nc_cat=111&ccb=3&_nc_sid=730e14&_nc_ohc=Z0K-6WKxq3MAX_YJK2B&_nc_ht=scontent.fuln1-1.fna&oh=8991fe05f2c87eebaf38c6e36d0a84dc&oe=6061476F" alt="Cookie">
+						<div>
+							<h3> Жигнэмэг </h3>
+						</div>
+					</div>
+					<div class="productList">
+						<img src= "Images/candy.svg" alt="Candy">
+						<div>
+							<h3> Чихэр </h3>
+						</div>
+					</div>
+					<div class="productList">
+						<img src= "Images/bakery.jpg" alt="Bakery">
+						<div>
+							<h3> Бейкери бүтээгдэхүүн </h3>
+						</div>
+					</div>
+				</div>		
+			</section>	
 		</main>
-
 		<footer>
-			<div>
-				<img src="" alt="iso">
-				<img src="" alt="iso">
-				<img src="" alt="iso">
+			<center>
+			<div class="logoContainer">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/certificate_2.png" alt="ISO/IEC Certificate">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/chanar_iso_2.png" alt="ISO 9001">
+				<img src="http://talkh-chikher.mn/static/sites/talkhchikher/default/images/logo3.png" alt="ISO 22000">
 			</div>
 			<p> © Copyright 2021, Byambategsh.D </p>
+			</center>
 		</footer>
 	</body>
 </html>
+
+	
