@@ -167,7 +167,7 @@ nav ul li a:hover{
     }
     
     .menu li a, .contact li a{
-        padding: 15px;
+        padding: 10px;
         opacity: 0;
         color: #fff;
         transition: all 0.2s ease;
